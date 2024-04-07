@@ -1,0 +1,43 @@
+
+Here are 40 commonly used commands for managing Kubernetes clusters:
+
+kubectl version: Display the client and server Kubernetes version.
+kubectl cluster-info: Display cluster information.
+kubectl get pods: List all pods in the current namespace.
+kubectl get deployments: List all deployments in the current namespace.
+kubectl get services: List all services in the current namespace.
+kubectl get nodes: List all nodes in the cluster.
+kubectl describe pod [pod_name]: Describe details about a specific pod.
+kubectl describe deployment [deployment_name]: Describe details about a specific deployment.
+kubectl describe service [service_name]: Describe details about a specific service.
+kubectl describe node [node_name]: Describe details about a specific node.
+kubectl create -f [filename]: Create resources from a YAML file.
+kubectl apply -f [filename]: Apply changes to resources from a YAML file.
+kubectl delete -f [filename]: Delete resources defined in a YAML file.
+kubectl exec -it [pod_name] -- [command]: Execute a command inside a pod.
+kubectl logs [pod_name]: Display logs for a specific pod.
+kubectl scale deployment [deployment_name] --replicas=[number]: Scale a deployment to a specific number of replicas.
+kubectl edit pod [pod_name]: Edit a pod configuration.
+kubectl edit deployment [deployment_name]: Edit a deployment configuration.
+kubectl rollout restart deployment [deployment_name]: Restart a deployment.
+kubectl get namespaces: List all namespaces in the cluster.
+kubectl create namespace [namespace_name]: Create a new namespace.
+kubectl describe namespace [namespace_name]: Describe details about a specific namespace.
+kubectl delete namespace [namespace_name]: Delete a namespace.
+kubectl config view: Display kubeconfig configuration.
+kubectl config current-context: Display the current-context in the kubeconfig file.
+kubectl config use-context [context_name]: Set the current-context in the kubeconfig file.
+kubectl rollout status deployment [deployment_name]: Check the status of a deployment rollout.
+kubectl create secret [type] [name] [data]: Create a secret.
+kubectl get secret [secret_name]: Get details about a secret.
+kubectl delete secret [secret_name]: Delete a secret.
+kubectl get events: Display cluster events.
+kubectl top node: Show metrics for nodes.
+kubectl top pod: Show metrics for pods.
+kubectl port-forward [pod_name] [local_port]:[remote_port]: Forward one or more local ports to a pod.
+kubectl proxy: Run a proxy to the Kubernetes API server.
+kubectl rollout history deployment [deployment_name]: Display rollout history of a deployment.
+kubectl annotate [resource_type] [resource_name] [annotation_key]=[annotation_value]: Add an annotation to a resource.
+kubectl label [resource_type] [resource_name] [label_key]=[label_value]: Add a label to a resource.
+kubectl rollout undo deployment [deployment_name]: Undo a deployment to the previous version.
+kubectl create -f [directory]: Create resources from all YAML files in a directory.
