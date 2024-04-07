@@ -1,0 +1,43 @@
+
+Ansible is primarily used for automation, configuration management, and orchestration tasks. While it provides a powerful set of modules for managing systems and applications, it also offers several command-line utilities for managing inventories, running ad-hoc commands, and executing playbooks. Here are 40 useful Ansible commands:
+
+ansible - The base command used for executing Ansible tasks.
+ansible-playbook - Command to run Ansible playbooks.
+ansible-galaxy - Command for managing Ansible roles.
+ansible-vault - Command-line utility for managing encrypted data within Ansible playbooks or roles.
+ansible-doc - Provides documentation for Ansible modules.
+ansible-pull - Pulls Ansible playbooks from a repository and executes them locally.
+ansible-config - Manages Ansible configuration settings.
+ansible-console - Interactive Ansible console for debugging and testing.
+ansible-inventory - Generates or displays an inventory in various formats.
+ansible-cmdb - Generates host overview from Ansible inventory.
+ansible-test - Runs Ansible integration tests.
+ansible-config - Manages Ansible configuration settings.
+ansible-container - Builds, deploys, and manages container-based applications using Ansible playbooks.
+ansible-vault - Encrypts sensitive data in Ansible playbooks.
+ansible-pull - Pulls Ansible configurations from a repository to execute locally.
+ansible-console - Interactive command-line interface for Ansible.
+ansible-doc - Displays documentation for Ansible modules.
+ansible-galaxy - Manages Ansible roles and collections.
+ansible-inventory - Displays Ansible inventory.
+ansible-lint - Lints Ansible playbooks for best practices.
+ansible-pull - Pulls Ansible playbooks from a repository and executes them locally.
+ansible-vault - Encrypts and decrypts files containing sensitive data.
+ansible-galaxy - Manages Ansible roles and collections.
+ansible-playbook - Runs Ansible playbooks.
+ansible-doc - Retrieves documentation for Ansible modules.
+ansible-console - Interactive shell for Ansible management.
+ansible-inventory - Manages Ansible inventories.
+ansible-galaxy - Helps in managing Ansible roles and collections.
+ansible-lint - Lints Ansible playbooks for potential issues and best practices.
+ansible-pull - Executes Ansible playbooks locally after fetching them from a repository.
+ansible-test - Runs Ansible integration tests.
+ansible-vault - Encrypts and decrypts files containing sensitive data.
+ansible-container - Builds, deploys, and manages container-based applications using Ansible.
+ansible-playbook - Executes Ansible playbooks.
+ansible-doc - Retrieves documentation for Ansible modules.
+ansible-console - Interactive command-line interface for Ansible.
+ansible-inventory - Manages Ansible inventories.
+ansible-pull - Pulls Ansible playbooks from a repository and executes them locally.
+ansible-vault - Manages encrypted Ansible files.
+ansible-galaxy - Manages Ansible roles and collections.
