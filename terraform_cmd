@@ -1,0 +1,28 @@
+terraform init: Initializes a working directory with Terraform configuration files.
+terraform fmt: Formats Terraform configuration files for readability.
+terraform validate: Validates the Terraform configuration syntax.
+Planning and Applying Infrastructure:
+
+terraform plan: Creates an execution plan for infrastructure changes.
+terraform apply: Applies the infrastructure changes based on the plan.
+terraform apply -auto-approve: Applies the changes without confirmation prompt. (Use with caution!)
+terraform destroy: Destroys the infrastructure managed by Terraform.
+terraform destroy -auto-approve: Destroys infrastructure without confirmation prompt. (Use with caution!)
+State Management:
+
+terraform refresh: Refreshes the Terraform state to reflect real-world infrastructure.
+terraform state show: Shows the current Terraform state information.
+terraform state rm: Removes resources from the Terraform state.
+terraform import: Imports existing infrastructure into Terraform state.
+Advanced Commands:
+
+terraform workspace: Creates and manages isolated workspaces for different environments.
+terraform output: Shows the values of outputs defined in the Terraform configuration.
+terraform providers: Shows information about the providers used in the configuration.
+terraform target: Applies changes to specific resources or modules.
+terraform lock/unlock: Locks or unlocks the state file to prevent concurrent modifications.
+Other Useful Commands:
+
+terraform version: Shows the installed Terraform version.
+terraform console: Connects to a remote Terraform Enterprise workspace. (https://developer.hashicorp.com/terraform/cloud-docs)
+terraform taint/untaint: Marks a resource as unreconcilable or brings it back to manageable state.
