@@ -1,0 +1,84 @@
+Basic Scan: trivy image <image-name> (as mentioned previously)
+Scan with Output Format: trivy image <image-name> --format json|yaml|toml (specify output for further processing)
+Scan Directory: trivy fs <directory-path> (scan local file system directory)
+Scan Registry: trivy image aquasec/trivy:latest@<registry> (scan image from specific registry)
+Vulnerability Analysis:
+
+Vulnerability Details: trivy image <image-name> --vuln-id <vulnerability-ID> (get details of a specific ID)
+Filter by Severity: trivy image <image-name> --severity high,critical (report only high/critical vulnerabilities)
+Exclude Vulnerabilities: trivy image <image-name> --exclude-vuln <vulnerability-ID> (ignore specific vulnerabilities)
+Show Fixed Vulnerabilities: trivy image <image-name> --fixable (list vulnerabilities with available fixes)
+Advanced Scans and Configurations:
+
+Scan with Database Update: trivy image <image-name> --refresh (update vulnerability database before scan) 1 10. Scan Private Images: trivy image <image-name> --username <username> --password <password> (with authentication)
+Scan Image with Custom Config File: trivy image <image-name> --config <config-file.yaml> (use a custom configuration)
+Report and Output Control:
+
+Save Scan Report: trivy image <image-name> --cache --quiet > scan_report.txt (cache scan and save report)
+Exclude Images from Cache: trivy image --clear-cache (remove cached image scans)
+Set Verbosity Level: trivy image <image-name> --quiet (suppress non-critical output)
+Integration and Automation:
+
+Scan Images in Dockerfile: trivy image -f Dockerfile (scan images referenced in a Dockerfile)
+Integrate with CI/CD Pipeline: (Use Trivy output with tools like Jenkins or GitLab for vulnerability checks in builds)
+Scan Images in Kubernetes Cluster: (Integrate Trivy with vulnerability scanners like Kube-Scan)
+Security Research and Whitelisting:
+
+Ignore Files from Scan: trivy image <image-name> --skip-path /path/to/ignore (exclude specific files)
+Whitelist Vulnerabilities: (Advanced configuration using custom rules to whitelist known-safe vulnerabilities)
+Scan Public Repositories: trivy image public/<image-name> (scan publicly available images)
+Remember, this is not an exhaustive list, and the most useful commands will depend on your specific workflow and security needs. Refer to the Trivy documentation for detailed explanations and additional functionalities: https://hub.docker.com/r/aquasec/trivy/
+
+
+
+
+share
+
+
+more_vert
+
+20 most usefull cmd of owasp
+edit
+
+Show drafts
+expand_more
+volume_up
+
+OWASP (Open Web Application Security Project) itself doesn't provide specific commands like tools like Trivy. However, it focuses on identifying and preventing web application security vulnerabilities. Here are 20 actions related to OWASP Top 10 that you can perform using various tools depending on your environment:
+
+Discovery and Enumeration:
+
+Identify Web Technologies: Use browser developer tools or tools like nmap (for network scanning) to identify web server software, frameworks, and libraries used by the target application.
+Directory Listing: Attempt directory listing using tools like dirb or gobuster to discover hidden files and directories.
+User Enumeration: Try common usernames and brute-force techniques (carefully and ethically) to identify valid user accounts.
+Vulnerability Scanning:
+
+SQL Injection Scan: Use tools like SQLMap or Burp Suite to automate SQL injection vulnerability scanning.
+XSS Scanning: Use tools like XSS-Payload-List or manual testing techniques to identify vulnerabilities to Cross-Site Scripting.
+Broken Access Control Scan: Use Burp Suite extensions or custom scripts to test for weaknesses in access control mechanisms.
+Configuration and Misconfiguration Assessment:
+
+Review Server Configuration Files: Manually review server configuration files (e.g., Apache httpd.conf) for insecure settings.
+Check Default Accounts: Identify and disable unused default accounts or services.
+Security Testing Tools and Techniques:
+
+Fuzzing: Use tools like hping3 (network fuzzing) or w3af (web application fuzzing) to identify unexpected behavior.
+Security Headers Analysis: Use browser developer tools or tools like curl to check for security headers like Content-Security-Policy (CSP).
+Security Hardening and Secure Coding:
+
+Enable Strong Authentication: Implement multi-factor authentication and follow secure password policies.
+Input Validation and Sanitization: Validate and sanitize all user input to prevent injection attacks.
+Secure Coding Practices: Follow secure coding practices specific to the programming language used in the application.
+Incident Response and Remediation:
+
+Identify Intrusion Attempts: Analyze logs for suspicious activity using tools like ELK Stack or SIEM solutions.
+Patching and Updating: Regularly update software components with security patches.
+Incident Response Planning: Develop an incident response plan to handle security breaches efficiently.
+Security Monitoring and Logging:
+
+Enable Web Application Firewalls (WAF): Implement WAFs to filter malicious traffic.
+Enable Logging and Auditing: Enable detailed logging of user activity and system events.
+Log Analysis: Regularly analyze logs for suspicious activity.
+Security Awareness and Training:
+
+Security Training for Developers and Users: Conduct security awareness training programs for developers and users to promote secure coding practices and responsible behavior.
