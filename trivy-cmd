@@ -1,0 +1,33 @@
+Basic Scan: trivy image <image-name> (as mentioned previously)
+Scan with Output Format: trivy image <image-name> --format json|yaml|toml (specify output for further processing)
+Scan Directory: trivy fs <directory-path> (scan local file system directory)
+Scan Registry: trivy image aquasec/trivy:latest@<registry> (scan image from specific registry)
+
+
+Vulnerability Analysis:
+
+Vulnerability Details: trivy image <image-name> --vuln-id <vulnerability-ID> (get details of a specific ID)
+Filter by Severity: trivy image <image-name> --severity high,critical (report only high/critical vulnerabilities)
+Exclude Vulnerabilities: trivy image <image-name> --exclude-vuln <vulnerability-ID> (ignore specific vulnerabilities)
+Show Fixed Vulnerabilities: trivy image <image-name> --fixable (list vulnerabilities with available fixes)
+
+Advanced Scans and Configurations:
+
+Scan with Database Update: trivy image <image-name> --refresh (update vulnerability database before scan) 1 10. Scan Private Images: trivy image <image-name> --username <username> --password <password> (with authentication)
+Scan Image with Custom Config File: trivy image <image-name> --config <config-file.yaml> (use a custom configuration)
+Report and Output Control:
+
+Save Scan Report: trivy image <image-name> --cache --quiet > scan_report.txt (cache scan and save report)
+Exclude Images from Cache: trivy image --clear-cache (remove cached image scans)
+Set Verbosity Level: trivy image <image-name> --quiet (suppress non-critical output)
+
+Integration and Automation:
+
+Scan Images in Dockerfile: trivy image -f Dockerfile (scan images referenced in a Dockerfile)
+Integrate with CI/CD Pipeline: (Use Trivy output with tools like Jenkins or GitLab for vulnerability checks in builds)
+Scan Images in Kubernetes Cluster: (Integrate Trivy with vulnerability scanners like Kube-Scan)
+Security Research and Whitelisting:
+
+Ignore Files from Scan: trivy image <image-name> --skip-path /path/to/ignore (exclude specific files)
+Whitelist Vulnerabilities: (Advanced configuration using custom rules to whitelist known-safe vulnerabilities)
+Scan Public Repositories: trivy image public/<image-name> (scan publicly available images)
